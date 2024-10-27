@@ -1,0 +1,17 @@
+Program PredikatCumlaude
+
+Kamus
+   semester : integer
+   skorEPrT : integer
+   cumlaude : boolean
+
+Algoritma
+   Input(semester, skorEPrT)
+   If semester <= 8 AND skorEPrT >= 500 Then
+      cumlaude ← true
+   Else
+      cumlaude ← false
+   End If
+   Output(cumlaude)
+
+End Program

@@ -1,0 +1,8 @@
+Soal 5. Koper
+
+1. Mulai.
+2. Siapkan kalkulator.
+3. Tanyakan berat koper dari masing-masing penumpang.
+4. Menghitung rata-rata berat koper dengan membagikan berat koper / jumlah penumpang dengan kalkulator.
+5. Tampilkan rata-rata berat koper.
+6. Selesai.

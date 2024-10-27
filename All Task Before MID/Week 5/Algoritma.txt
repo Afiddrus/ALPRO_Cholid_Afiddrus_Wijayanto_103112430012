@@ -1,0 +1,11 @@
+Soal 9. Faktor Bilangan
+
+Mulai program.
+Deklarasikan variabel N untuk menyimpan bilangan bulat positif yang dimasukkan oleh pengguna.
+Deklarasikan variabel d untuk iterasi dan s untuk menyimpan status boolean.
+Tanyakan kepada pengguna untuk memasukkan bilangan bulat positif (N).
+Gunakan loop dari 1 hingga N untuk memeriksa setiap angka:
+Jika N habis dibagi d (N mod d = 0), set s menjadi true.
+Jika tidak, set s menjadi false.
+Tampilkan nilai d dan status s.
+Selesai.

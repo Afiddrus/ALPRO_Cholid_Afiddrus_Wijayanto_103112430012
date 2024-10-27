@@ -1,0 +1,16 @@
+Program HargaJualBarang
+
+Kamus
+   harga_beli1, harga_beli2, harga_beli3 : integer
+   harga_jual1, harga_jual2, harga_jual3 : float
+
+Algoritma
+   Input(harga_beli1, harga_beli2, harga_beli3)
+   
+   harga_jual1 ← harga_beli1 + (harga_beli1 * 0.05)
+   harga_jual2 ← harga_beli2 + (harga_beli2 * 0.05)
+   harga_jual3 ← harga_beli3 + (harga_beli3 * 0.05)
+
+   Output(harga_jual1, harga_jual2, harga_jual3)
+
+End Program

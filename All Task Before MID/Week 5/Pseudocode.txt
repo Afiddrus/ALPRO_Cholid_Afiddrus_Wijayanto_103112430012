@@ -1,0 +1,18 @@
+program FaktorBilangan
+
+kamus
+    N: integer
+    d: integer
+    s: boolean
+
+algoritma
+    input(N)
+    untuk d dari 1 hingga N lakukan
+        jika N mod d = 0 maka
+            s = true
+        lain
+            s = false
+        output(d, s)
+    akhir untuk
+
+endprogram

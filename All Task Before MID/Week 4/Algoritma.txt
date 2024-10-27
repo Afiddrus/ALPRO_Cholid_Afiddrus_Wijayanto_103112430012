@@ -1,0 +1,12 @@
+Soal 5. Investasi Saham
+
+1. Mulai
+2. Tanyakan nilai harga beli, harga jual, dan jumlah saham.
+3. Hitung total investasi awal sebagai harga_beli × jumlah_saham.
+4. Hitung total penjualan sebagai harga_jual × jumlah_saham.
+5. Hitung keuntungan kotor sebagai total_penjualan - total_investasi.
+6. Hitung biaya transaksi sebagai 0.2% × total_penjualan.
+7. Hitung pajak keuntungan sebagai 10% × keuntungan_kotor.
+8. Hitung keuntungan bersih sebagai keuntungan_kotor - biaya_transaksi - pajak_keuntungan.
+9. Tampilkan keuntungan bersih.
+10. Selesai

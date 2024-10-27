@@ -1,0 +1,21 @@
+Program RataRataBeratKoper
+
+Kamus
+   N, i : integer
+   totalWeight, weight, averageWeight : float
+
+Algoritma
+   Input(N)
+   If N > 0 Then
+      totalWeight <- 0
+      For i = 1 To N Do
+         Input(weight)
+         totalWeight <- totalWeight + weight
+      End For
+      averageWeight <- totalWeight / N
+      Output(averageWeight)
+   Else
+      Output("Jumlah penumpang harus lebih besar dari 0")
+   End If
+
+End Program

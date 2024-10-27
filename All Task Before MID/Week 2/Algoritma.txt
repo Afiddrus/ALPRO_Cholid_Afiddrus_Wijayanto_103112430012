@@ -1,0 +1,9 @@
+Soal 5. Toko
+
+1. Mulai
+2. Siapkan kalkulator atau komputer.
+3. Tanyakan harga beli dari tiga barang yang akan dijual.
+4. Untuk setiap barang:
+    Hitung harga jual barang dengan rumus: harga jual = harga beli + (harga beli * 5%)
+5. Tampilkan harga jual dari ketiga barang.
+6. Selesai

@@ -1,0 +1,9 @@
+Soal 2. Cumlaude
+
+1. Mulai
+2. Tanyakan jumlah semester yang ditempuh mahasiswa hingga lulus.
+3. Tanyakan skor EPrT mahasiswa.
+4. Jika jumlah semester yang ditempuh mahasiswa kurang dari atau sama dengan 8 dan skor EPrT lebih besar dari atau sama dengan 500, maka mahasiswa dinyatakan cumlaude.
+5. Jika tidak, mahasiswa tidak cumlaude.
+6. Tampilkan hasil (true atau false).
+7. Selesai

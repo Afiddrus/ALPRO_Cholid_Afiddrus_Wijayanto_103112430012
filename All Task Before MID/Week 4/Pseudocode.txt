@@ -1,0 +1,34 @@
+Program HitungKeuntunganSaham
+
+Kamus
+   Tipe Bentukan Investasi
+      harga_beli : float
+      harga_jual : float
+      jumlah_saham : int
+      total_investasi : float
+      total_penjualan : float
+      keuntungan_kotor : float
+      biaya_transaksi : float
+      pajak_keuntungan : float
+      keuntungan_bersih : float
+
+   inv : Investasi
+
+Algoritma
+   Input(inv.harga_beli, inv.harga_jual, inv.jumlah_saham)
+
+   inv.total_investasi ← inv.harga_beli * inv.jumlah_saham
+   inv.total_penjualan ← inv.harga_jual * inv.jumlah_saham
+   inv.keuntungan_kotor ← inv.total_penjualan - inv.total_investasi
+   inv.biaya_transaksi ← 0.002 * inv.total_penjualan
+   inv.pajak_keuntungan ← 0.1 * inv.keuntungan_kotor
+   inv.keuntungan_bersih ← inv.keuntungan_kotor - inv.biaya_transaksi - inv.pajak_keuntungan
+
+   Output("Total Investasi Awal: Rp", inv.total_investasi)
+   Output("Total Penjualan: Rp", inv.total_penjualan)
+   Output("Keuntungan Kotor: Rp", inv.keuntungan_kotor)
+   Output("Biaya Transaksi: Rp", inv.biaya_transaksi)
+   Output("Pajak Keuntungan: Rp", inv.pajak_keuntungan)
+   Output("Keuntungan Bersih: Rp", inv.keuntungan_bersih)
+
+End Program
