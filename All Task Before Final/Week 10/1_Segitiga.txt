@@ -1,0 +1,20 @@
+program Segitiga
+    kamus
+        input1, input2, input3: integer
+    
+    algoritma
+        print "Masukkan nilai sisi 1:"
+        read input1
+        print "Masukkan nilai sisi 2:"
+        read input2
+        print "Masukkan nilai sisi 3:"
+        read input3
+
+        if input1 == input2 and input2 == input3 then
+            print "Segitiga Sama Sisi"
+        else if input1 == input3 then
+            print "Segitiga Sama Kaki"
+        else
+            print "Segitiga Sembarang"
+        end if
+end program

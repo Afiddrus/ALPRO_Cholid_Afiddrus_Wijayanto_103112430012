@@ -1,0 +1,34 @@
+program Digit
+    kamus
+        X: integer
+        total: integer
+        digit: integer
+        first: boolean
+    algoritma
+        print "Masukkan bilangan bulat positif: "
+        read X
+
+        total = 0
+
+        first = true
+
+        repeat
+            digit = X mod 10
+
+            if first = false then
+                print " "
+            end if
+
+            print digit
+
+            total = total + digit
+
+            X = X div 10
+
+            first = false
+
+        until X = 0
+
+        print " "
+        print total
+    end program

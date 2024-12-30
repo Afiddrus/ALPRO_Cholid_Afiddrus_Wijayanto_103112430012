@@ -1,0 +1,32 @@
+program AkhirTahun
+    kamus
+        totalBelanja: integer
+        bersediaKartu: boolean
+        kartu, diskon, cashback: boolean
+        finalBelanja: integer
+    algoritma
+        print "Masukkan total belanja:"
+        read totalBelanja
+
+        print "Apakah bersedia dibuatkan kartu? (true/false):"
+        read bersediaKartu
+
+        kartu = bersediaKartu AND totalBelanja >= 100000
+        diskon = totalBelanja >= 100000
+        cashback = kartu AND totalBelanja >= 200000
+
+        finalBelanja = totalBelanja
+
+        if diskon then
+            finalBelanja = finalBelanja - (totalBelanja div 10) 
+        end if
+
+        if cashback then
+            finalBelanja = finalBelanja - 75000
+        end if
+
+        print "Kartu? ", kartu
+        print "Diskon? ", diskon
+        print "Cashback? ", cashback
+        print "Rp. ", finalBelanja
+    end program

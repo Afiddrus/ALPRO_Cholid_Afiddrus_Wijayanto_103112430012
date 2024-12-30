@@ -1,0 +1,14 @@
+program Waktu
+    kamus
+        totalDetik, jam, menit, detik: integer
+
+    algoritma
+        print "Masukkan waktu dalam detik:"
+        read totalDetik
+
+        jam = totalDetik / 3600
+        menit = (totalDetik % 3600) / 60
+        detik = totalDetik % 60
+
+        print jam, "jam", menit, "menit", detik, "detik"
+end program

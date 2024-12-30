@@ -1,0 +1,13 @@
+program Determinan
+    kamus
+        a, b, c, d: real
+        determinant: real
+
+    algoritma
+        print "Masukkan nilai a, b, c, d:"
+        read a, b, c, d
+
+        determinant = (a * d) - (b * c)
+
+        print "Determinannya adalah:", determinant
+end program

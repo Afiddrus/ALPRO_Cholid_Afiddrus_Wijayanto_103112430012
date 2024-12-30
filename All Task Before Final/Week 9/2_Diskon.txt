@@ -1,0 +1,20 @@
+program Diskon
+    kamus
+        totalBelanja, totalAkhir: real
+        ikutCLO: boolean
+
+    algoritma
+        print "Masukkan total belanja awal (dalam rupiah):"
+        read totalBelanja
+
+        print "Apakah mahasiswa sedang mengikuti asesmen CLO? (true/false):"
+        read ikutCLO
+
+        if ikutCLO then
+            totalAkhir = totalBelanja * 0.65 
+        else
+            totalAkhir = totalBelanja  
+        end if
+
+        print "Total belanja akhir yang harus dibayar: IDR ", totalAkhir
+end program

@@ -1,0 +1,16 @@
+program Tiga & Lima
+    kamus
+        number: bilangan bulat
+
+    algoritma
+        print "Masukkan bilangan bulat positif:"
+        read number
+
+        if number habis dibagi 3 dan habis dibagi 5 maka
+            print "Kelipatan 3 dan 5"
+        else if number habis dibagi 3 maka
+            print "Kelipatan 3"
+        else if number habis dibagi 5 maka
+            print "Kelipatan 5"
+        end if
+end program

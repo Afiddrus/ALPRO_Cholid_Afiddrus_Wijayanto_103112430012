@@ -1,0 +1,22 @@
+program CangkirKopi
+    kamus
+        n, m, x, y: integer
+        jumlahCangkir: integer
+    algoritma
+        print "Masukkan jumlah gula (n), jumlah kopi (m), gula per cangkir (x), kopi per cangkir (y): "
+        read n, m, x, y
+
+        jumlahCangkir = 0
+
+        repeat
+            if n >= x and m >= y then
+                n = n - x
+                m = m - y
+                jumlahCangkir = jumlahCangkir + 1
+            else
+                break
+            end if
+        until n < x or m < y
+
+        print "Banyaknya cangkir kopi yang berhasil dibuat: ", jumlahCangkir
+    end program

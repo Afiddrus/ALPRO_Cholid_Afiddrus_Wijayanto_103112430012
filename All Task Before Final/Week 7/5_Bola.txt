@@ -1,0 +1,21 @@
+program Bola
+    kamus
+        n: integer
+        massaJenis, volume, massaTotal, rataRata: real
+
+    algoritma
+        print "Masukkan jumlah bola (n):"
+        read n
+
+        massaTotal = 0.0
+
+        for i = 1 to n do
+            print "Masukkan massa jenis dan volume bola ke-", i, " (pisahkan dengan spasi):"
+            read massaJenis, volume
+            massaTotal = massaTotal + (massaJenis * volume)
+        end for
+
+        rataRata = massaTotal / n
+
+        print "Rata-rata berat bola: ", rataRata, " kg"
+end program

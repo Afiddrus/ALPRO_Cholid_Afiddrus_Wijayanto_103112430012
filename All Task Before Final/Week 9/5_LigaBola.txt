@@ -1,0 +1,39 @@
+program LigaBola
+    kamus
+        gol1, gol2, gol3, gol4: integer
+        max, min: integer
+
+    algoritma
+        print "Masukkan jumlah gol untuk 4 tim:"
+        read gol1, gol2, gol3, gol4
+
+        max = gol1
+        min = gol1
+
+        if gol2 > max then
+            max = gol2
+        end if
+
+        if gol3 > max then
+            max = gol3
+        end if
+
+        if gol4 > max then
+            max = gol4
+        end if
+
+        if gol2 < min then
+            min = gol2
+        end if
+
+        if gol3 < min then
+            min = gol3
+        end if
+
+        if gol4 < min then
+            min = gol4
+        end if
+
+        print "Gol terbanyak: ", max
+        print "Gol tersedikit: ", min
+end program

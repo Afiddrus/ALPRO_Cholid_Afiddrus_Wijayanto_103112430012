@@ -1,0 +1,37 @@
+program Konsekutif
+    kamus
+        bilangan: integer
+        konsekutif: boolean
+        digitSebelumnya, digitSekarang: integer
+    algoritma
+        print "Masukkan bilangan bulat positif: "
+        read bilangan
+
+        konsekutif = true
+        digitSebelumnya = -1
+
+        repeat
+            digitSekarang = bilangan mod 10
+
+            if digitSebelumnya != -1 then
+                if nilaiMutlak(digitSekarang - digitSebelumnya) != 1 then
+                    konsekutif = false
+                    break
+                end if
+            end if
+
+            digitSebelumnya = digitSekarang
+            bilangan = bilangan div 10
+
+        until bilangan = 0
+
+        print "Apakah bilangan konsekutif?", konsekutif
+    end program
+
+function nilaiMutlak(angka: integer) -> integer
+    if angka < 0 then
+        return -angka
+    else
+        return angka
+    end if
+end function

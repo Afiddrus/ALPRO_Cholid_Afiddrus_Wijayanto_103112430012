@@ -1,0 +1,20 @@
+program Prisma
+    kamus
+        panjang, lebar, tinggi, volume, luasPermukaan: real
+    
+    algoritma
+        print "Masukkan panjang prisma:"
+        read panjang
+        
+        print "Masukkan lebar prisma:"
+        read lebar
+        
+        print "Masukkan tinggi prisma:"
+        read tinggi
+
+        volume = panjang * lebar * tinggi
+        luasPermukaan = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi)
+
+        print "Volume prisma: ", volume
+        print "Luas permukaan prisma: ", luasPermukaan
+end program

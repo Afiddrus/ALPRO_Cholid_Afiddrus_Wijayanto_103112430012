@@ -1,0 +1,29 @@
+program Login
+    kamus
+        usernameCorrect, passwordCorrect: string
+        failedLoginAttempts: integer
+        username, password: string
+    algoritma
+        usernameCorrect = "admin"
+        passwordCorrect = "admin"
+
+        failedLoginAttempts = 0
+
+        repeat
+            print "Enter username: "
+            read username
+
+            print "Enter password: "
+            read password
+
+            if username = usernameCorrect and password = passwordCorrect then
+                break
+            else
+                failedLoginAttempts = failedLoginAttempts + 1
+                print "Incorrect username or password. Please try again."
+            end if
+        until username = usernameCorrect and password = passwordCorrect
+
+        print "Number of failed login attempts: ", failedLoginAttempts
+        print "Login successful"
+    end program

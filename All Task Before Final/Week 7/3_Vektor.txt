@@ -1,0 +1,21 @@
+program Vektor
+    kamus
+        x1, y1, z1: real
+        x2, y2, z2: real
+        x3, y3, z3: real
+        avgX, avgY, avgZ: real
+
+    algoritma
+        print "Masukkan koordinat X, Y, Z untuk vektor 1:"
+        read x1, y1, z1
+        print "Masukkan koordinat X, Y, Z untuk vektor 2:"
+        read x2, y2, z2
+        print "Masukkan koordinat X, Y, Z untuk vektor 3:"
+        read x3, y3, z3
+
+        avgX = (x1 + x2 + x3) / 3
+        avgY = (y1 + y2 + y3) / 3
+        avgZ = (z1 + z2 + z3) / 3
+
+        print "Rata-rata vektor (X, Y, Z):", avgX, avgY, avgZ
+end program

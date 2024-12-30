@@ -1,0 +1,25 @@
+program TangkiAir
+    kamus
+        kapasitas, isiSekarang, volume: integer
+    algoritma
+        print "Masukkan kapasitas tangki (T): "
+        read kapasitas
+
+        isiSekarang = 0
+
+        repeat
+            print "Masukkan volume air dalam ember (V): "
+            read volume
+
+            isiSekarang = isiSekarang + volume
+
+            if isiSekarang >= kapasitas then
+                print "true" 
+            else
+                print "false" 
+            end if
+
+            print "Status: ", isiSekarang, "/", kapasitas, " liter"
+            print "------------------------"
+        until isiSekarang >= kapasitas
+    end program

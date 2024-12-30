@@ -1,0 +1,20 @@
+program Keuntungan
+    kamus
+        prevProfit, currProfit, change: real
+    algoritma
+        print "Masukkan keuntungan bulan sebelumnya:"
+        read prevProfit
+
+        print "Masukkan keuntungan bulan ini:"
+        read currProfit
+
+        change = currProfit - prevProfit
+
+        if change > 0 then
+            print "Peningkatan sebesar", change
+        else if change < 0 then
+            print "Penurunan sebesar", -change
+        else
+            print "Tetap"
+        end if
+    end program

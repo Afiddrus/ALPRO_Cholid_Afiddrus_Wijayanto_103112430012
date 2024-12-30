@@ -1,0 +1,19 @@
+program Tamasya
+    kamus
+        N, jumlahMobil: integer
+        kapasitasMobil: constant integer
+
+    algoritma
+        print "Masukkan jumlah mahasiswa:"
+        read N
+
+        kapasitasMobil = 7
+
+        if N mod kapasitasMobil = 0 then
+            jumlahMobil = N div kapasitasMobil
+        else
+            jumlahMobil = (N div kapasitasMobil) + 1
+        end if
+
+        print "Jumlah mobil yang diperlukan: ", jumlahMobil
+end program

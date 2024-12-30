@@ -1,0 +1,48 @@
+program Temperatur
+    kamus
+        temp1, temp2, temp3, temp4, temp5: real
+        isAscending, isDescending: boolean
+    
+    algoritma
+        print "Masukkan 5 temperatur:"
+        read temp1
+        read temp2
+        read temp3
+        read temp4
+        read temp5
+
+        isAscending = true
+        isDescending = true
+
+        if temp1 < temp2 then
+            isDescending = false
+        else if temp1 > temp2 then
+            isAscending = false
+        end if
+
+        if temp2 < temp3 then
+            isDescending = false
+        else if temp2 > temp3 then
+            isAscending = false
+        end if
+
+        if temp3 < temp4 then
+            isDescending = false
+        else if temp3 > temp4 then
+            isAscending = false
+        end if
+
+        if temp4 < temp5 then
+            isDescending = false
+        else if temp4 > temp5 then
+            isAscending = false
+        end if
+
+        if isAscending then
+            print "Stabil naik"
+        else if isDescending then
+            print "Stabil turun"
+        else
+            print "Tidak stabil"
+        end if
+end program

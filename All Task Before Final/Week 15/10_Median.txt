@@ -1,0 +1,25 @@
+program Median
+
+    kamus
+
+        y: integer
+        a1, a2, a3, a4, a5, a6, a7, a8, a9: integer
+        total: integer
+        median: integer
+        minimumSum: integer
+
+    algoritma
+    
+        input(y)  // Input the value of y
+        input(a1, a2, a3, a4, a5, a6, a7, a8, a9)  
+        total = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 
+        minimumSum = y * 5  
+
+        if total >= minimumSum then  
+            median = y
+        else
+            median = 0
+        endif
+        output(median)  
+
+endprogram

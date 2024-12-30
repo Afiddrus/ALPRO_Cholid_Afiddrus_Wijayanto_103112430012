@@ -1,0 +1,17 @@
+program Novel
+kamus
+    p, r, hari : integer
+
+algoritma
+    output("Masukkan jumlah halaman novel (p): ")
+    input(p)
+    output("Masukkan jumlah halaman yang dibaca per hari (r): ")
+    input(r)
+
+    hari = p div r
+    if p mod r > 0 then
+        hari = hari + 1
+    endif
+
+    output("Total hari yang dibutuhkan: ", hari, " hari")
+endprogram

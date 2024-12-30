@@ -1,0 +1,15 @@
+program SportsClub
+kamus
+    s, minggu : integer
+
+algoritma
+    output("Masukkan jumlah hari (s): ")
+    input(s)
+
+    minggu = s div 7
+    if s mod 7 == 0 then
+        output("Minggu ke-: ", minggu)
+    else
+        output("Minggu ke-: ", minggu + 1)
+    endif
+endprogram

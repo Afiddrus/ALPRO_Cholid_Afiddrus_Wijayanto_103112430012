@@ -1,0 +1,25 @@
+program PlayGround
+kamus
+    tarif, potongan : real
+    diskon, tarif_awal : real
+    durasi, kelebihan : integer
+    member : string 
+algoritma
+    input(member, durasi)
+    if member == "Gold" then 
+        diskon = 0.5
+    else if member == "Silver" then 
+        diskon = 0.25
+    else
+        diskon = 0
+    endif
+    if durasi <= 2 then
+        tarif_awal = 65000
+    else 
+        kelebihan = durasi - 2
+        tarif_awal = 65000 + (20000 + kelebihan)
+    endif
+    potongan = diskon * tarif_awal
+    tarif = tarif_awal - potongan
+    output("IDR", tarif)
+endprogram

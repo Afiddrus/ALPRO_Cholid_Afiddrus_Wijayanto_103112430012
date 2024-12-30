@@ -1,0 +1,19 @@
+program Dompet
+    kamus
+        saldo: integer
+        transaksi: integer
+    algoritma
+        saldo = 0
+
+        repeat
+            print "Masukkan transaksi (0 untuk berhenti): "
+            read transaksi
+
+            if transaksi != 0 then
+                saldo = saldo + transaksi
+            end if
+
+        until transaksi = 0
+
+        print "Saldo akhir dompet: ", saldo
+    end program

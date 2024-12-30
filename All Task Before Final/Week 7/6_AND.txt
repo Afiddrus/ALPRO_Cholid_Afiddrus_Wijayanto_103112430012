@@ -1,0 +1,20 @@
+program OperasiAND
+    kamus
+        n: integer
+        input: boolean
+        result: boolean
+
+    algoritma
+        result = true  
+
+        print "Masukkan jumlah nilai boolean (n):"
+        read n
+
+        print "Masukkan nilai boolean (true/false) sebanyak", n, ":"
+        for i = 1 to n do
+            read input
+            result = result AND input  
+        end for
+
+        print "Hasil operasi AND: ", result
+end program

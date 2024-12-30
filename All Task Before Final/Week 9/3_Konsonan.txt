@@ -1,0 +1,18 @@
+program Konsonan
+    kamus
+        char: karakter
+
+    algoritma
+        print "Masukkan satu karakter huruf:"
+        read char
+
+        if char adalah huruf maka
+            if char adalah vokal ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U') maka
+                print "Bukan konsonan"
+            else
+                print "Konsonan"
+            end if
+        else
+            print "Bukan konsonan"
+        end if
+end program
